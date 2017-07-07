@@ -2,16 +2,18 @@
 <html>
   <head>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
     <title>Count Total</title>
   </head>
   <body>
     <div class='container'>
-      <h3><em>You entered the word: </em>{{ base_input }} <em> and the string of: </em>{{ string_input }}</h3>
-      <br>
-      <h3><em>Here's how many times we counted {{ base_input }}:</em></h3>
-      <h2>{{ result }}</h2>
-      <br>
-      <h3><a href='/'><u>Try again</u></a></h3>
+      <div class='well' id='answer'>
+        <h4><em>You entered the word: </em>{{ base_input }} <em> and the string of: </em>{{ string_input }}</h4>
+        <br>
+        <h4><em>Here's how many times we counted {{ base_input }}:</em></h4>
+        <h1>{{ result }}</h1>
+        <center><h4><a href='/'><u>Try again</u></a></h4></center>
+      </div>
     </div>
   </body>
 </html>
