@@ -47,6 +47,17 @@
 
             $this->assertEquals("Base input can only be one word", $result);
         }
+
+        function testCountRepeatsSpecialChar()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $base_input = 'won';
+            $string_input = 'I won!';
+
+            $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
+
+            $this->assertEquals(1, $result);
+        }
     }
 
 ?>
