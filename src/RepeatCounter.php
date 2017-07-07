@@ -2,15 +2,36 @@
 
     class RepeatCounter
     {
-        function countRepeats($base_input, $string_input)
+        private $title;
+        private $lyrics;
+
+        function __construct($title, $lyrics)
+        {
+            $this->title = $title;
+            $this->lyrics = $lyrics;
+        }
+
+        function getTitle()
+        {
+            return $this->title;
+        }
+
+        function getLyrics()
+        {
+            return $this->lyrics;
+        }
+
+        function countRepeats($base_input, $lyrics)
         {
             $space_check = " ";
 
             if (strpos($base_input, $space_check) == true) {
                 $answer = "Hold up... we said enter a SINGLE WORD to check against";
             } else {
+                var_dump($lyrics);
                 $base_lower = strtolower($base_input);
-                $string_lower = strtolower($string_input);
+                $string_lower = strtolower($lyrics);
+
                 $string_to_words = explode(" ", $string_lower);
                 $matches = [];
                 foreach($string_to_words as $word)
