@@ -14,4 +14,4 @@ Word Frequency Specs
 	⁃	Output: 2 -->
 	•	The program should produce an error message if more than one word is entered for the base input.
 	⁃	Input: ‘tree trees’ (base input); ’Tree is trees is tree’ (second input) — testing that the program notices a space in the base input.
-	⁃	Output: "base input must be one word only"
+	⁃	Output: "Base input can only be one word"

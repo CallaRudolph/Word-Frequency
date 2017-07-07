@@ -37,15 +37,15 @@
             $this->assertEquals(1, $result);
         }
 
-        function testCountRepeatsMultiMatch()
+        function testCountRepeatsBaseSpace()
         {
             $test_RepeatCounter = new RepeatCounter;
-            $base_input = 'tree';
+            $base_input = 'tree trees';
             $string_input = 'Tree is trees is tree';
 
             $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
 
-            $this->assertEquals(2, $result);
+            $this->assertEquals("Base input can only be one word", $result);
         }
     }
 
