@@ -3,12 +3,12 @@ Word Frequency Specs
 	•	The program should allow the user to enter a single-character base input and single-character second input, compare if they match, and return the number of matches found.
 	⁃	Input: ‘a’ (base input); ‘a’ (second input) — testing for successful single character match
 	⁃	Output: 1
-	•	The program should allow the user to enter a two-character base input and a two-character second input, compare if they match, and return the number of matches found.
+	<!-- •	The program should allow the user to enter a two-character base input and a two-character second input, compare if they match, and return the number of matches found.
 	⁃	Input: ‘cd’ (base input); ‘cd’ (second input) — testing for successful multi-character match
-	⁃	Output: 1
-	•	The program should allow the user to enter at least a single-character base input and a multi-character second input, compare if they fully match, and return the number of matches found.
+	⁃	Output: 1 -->
+	<!-- •	The program should allow the user to enter at least a single-character base input and a multi-character second input, compare if they fully match, and return the number of matches found.
 	⁃	Input: ‘cat’ (base input); ‘catty’ (second input) — testing that the program is able to hold the entire second input in its original value and distinguish it as not matching the entire value of the base input
-	⁃	Output: (null)
+	⁃	Output: 0 -->
 	•	The program should allow the user to enter a base input and a string of at least two words for second input, compare the base input to the entire string, and return the number of matches found.
 	⁃	Input: ‘be’ (base input); ‘bee is be’ (second input) — testing that the program can compare a single-word base input string to a multi-word second input string and find the exact word match
 	⁃	Output: 1

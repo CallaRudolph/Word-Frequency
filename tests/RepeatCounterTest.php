@@ -4,11 +4,22 @@
 
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
-        function testCountRepeatsOneChar()
+        function testCountRepeatsOneWord()
         {
             $test_RepeatCounter = new RepeatCounter;
-            $base_input = 'a';
-            $string_input = 'a';
+            $base_input = 'cd';
+            $string_input = 'cd';
+
+            $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
+
+            $this->assertEquals(1, $result);
+        }
+
+        function testCountRepeatsString()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $base_input = 'be';
+            $string_input = 'bee is be';
 
             $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
 
