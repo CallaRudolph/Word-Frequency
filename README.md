@@ -10,8 +10,8 @@ Word Frequency Specs
 	⁃	Input: ‘Bird’ (base input); ‘birD is the word’ (second input) — testing for successful conversion of inputs to lowercase letters for proper comparison
 	⁃	Output: 1
 	•	The program should produce an error message if more than one word is entered for the base input.
-	⁃	Input: ‘tree trees’ (base input); ’Tree is trees is tree’ (second input) — testing that the program notices a space in the base input.
+	⁃	Input: ‘tree trees’ (base input); ’Tree is trees is tree’ (second input) — testing that the program notices a space in the base input
 	⁃	Output: "Base input can only be one word"
-	•	The program can distinguish matching inputs regardless of special characters.
-	⁃	Input: ‘won’ (base input); ’I won!' (second input) — testing that the program can find a match even with a special character attached.
-	⁃	Output: "1"
+	•	The program should produce an error message if the second input contains a special character.
+	⁃	Input: ‘won’ (base input); ’I won!' (second input) — testing that the program can find a special character in the second input
+	⁃	Output: "String of words cannot contain special characters"
