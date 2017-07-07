@@ -36,6 +36,17 @@
 
             $this->assertEquals(1, $result);
         }
+
+        function testCountRepeatsMultiMatch()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $base_input = 'tree';
+            $string_input = 'Tree is trees is tree';
+
+            $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
+
+            $this->assertEquals(2, $result);
+        }
     }
 
 ?>
