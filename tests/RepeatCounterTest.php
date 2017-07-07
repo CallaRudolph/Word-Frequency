@@ -56,7 +56,7 @@
 
             $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
 
-            $this->assertEquals("Wait a second... your string of words can't contain special characters!", $result);
+            $this->assertEquals(1, $result);
         }
     }
 
