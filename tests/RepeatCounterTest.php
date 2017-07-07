@@ -25,6 +25,17 @@
 
             $this->assertEquals(1, $result);
         }
+
+        function testCountRepeatsCase()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $base_input = 'Bird';
+            $string_input = 'birD is the word';
+
+            $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
+
+            $this->assertEquals(1, $result);
+        }
     }
 
 ?>
