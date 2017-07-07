@@ -45,7 +45,7 @@
 
             $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
 
-            $this->assertEquals("Base input can only be one word", $result);
+            $this->assertEquals("Hold up... we said enter a SINGLE WORD to check against", $result);
         }
 
         function testCountRepeatsSpecialChar()
@@ -56,7 +56,7 @@
 
             $result = $test_RepeatCounter->countRepeats($base_input, $string_input);
 
-            $this->assertEquals("String of words cannot contain special characters", $result);
+            $this->assertEquals("Wait a second... your string of words can't contain special characters!", $result);
         }
     }
 

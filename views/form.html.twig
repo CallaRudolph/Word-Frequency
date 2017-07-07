@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Word Input</title>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Word Counter</h1>
+      <p>Enter a word and then a string of words, and we will count how many times your word appears in your string!</p>
+      <form action='/result'>
+        <div class='form-group'>
+          <label for='base_input'>Word:</label>
+          <input id='base_input' name='base_input' class='form-control' type='text' required>
+        </div>
+        <div class='form-group'>
+          <label for='string_input'>String of words:</label>
+          <input id='string_input' name='string_input' class='form-control' type='text' required>
+        </div>
+        <button type='submit' class='btn-success'>Count 'em up!'</button>
+      </form>
+    </div>
+  </body>
+</html>

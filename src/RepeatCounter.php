@@ -20,9 +20,9 @@
             $space_check = " ";
 
             if ($alpha_check == true) {
-                $answer = "String of words cannot contain special characters";
+                $answer = "Wait a second... your string of words can't contain special characters!";
             } elseif (strpos($base_input, $space_check) == true) {
-                $answer= "Base input can only be one word";
+                $answer= "Hold up... we said enter a SINGLE WORD to check against";
             } else {
                 $base_lower = strtolower($base_input);
                 $string_lower = strtolower($string_input);
