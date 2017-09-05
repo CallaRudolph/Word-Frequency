@@ -1,24 +1,32 @@
 # Word Frequency
 ##### _Behavior-Driven Development PHP Independent Project for Epicodus, July 7, 2017_
 
-#### By Calla Rudolph (<callarudolph@gmail.com>)
+#### By _Calla Rudolph_ [(e-mail me here)](<mailto:callarudolph@gmail.com>)
 
 ## Description
 
 This web application allows users to input a single word and a string of words, and the program will check for how frequently the given word appears in the given string. This is a practice in using Behavior-Driven Development in PHP with the Silex micro framework and twig templates. It was tested step by step using the PHPUnit testing framework.
+
+![Preview of Form](web/img/home.png)
+_This image is a screenshot of the search form_
+
+![Preview of Results](web/img/result.png)
+_This image is a screenshot of the results page_
 
 ## Setup
 
 * Open GitHub site on your browser: https://github.com/CallaRudolph/php-word-frequency
 * Select the dropdown (green box) "Clone or download"
 * Copy the link for the GitHub repository
-* Open Terminal on your computer
-* In Terminal, perform the following steps:
-    * type 'cd desktop' and press enter
-    * type 'git clone' then copy the repository link and press enter
-    * type 'cd php-word-frequency' to access the document root (project folder) on your computer
-    * type 'composer install' to download dependencies (Silex, Twig, and PHPUnit)
-    * type 'cd web' to access web folder, then type 'php -S localhost:8000' to open local server
+* Open Terminal on your computer and perform the following steps:
+````
+    * $ cd desktop
+    * $ git clone <paste repository link>
+    * $ cd php-word-frequency
+    * $ composer install --> to download dependencies (Silex, Twig, and PHPUnit)
+    * $ cd web --> to access web folder
+    * $ php -S localhost:8000 --> to open local server
+````
 * Open browser and type 'localhost:8000' to view app.
 * Enter in a word and string of words, and find out how many times your word appears in the string!
 * Click "Try again" to return to the home page.
