@@ -15,17 +15,20 @@ _This image is a screenshot of the results page_
 
 ## Setup
 
-* Open GitHub site on your browser: https://github.com/CallaRudolph/php-word-frequency
+* Open GitHub site on your browser: https://github.com/CallaRudolph/Word-Frequency
 * Select the dropdown (green box) "Clone or download"
 * Copy the link for the GitHub repository
 * Open Terminal on your computer and perform the following steps:
 ````
     * $ cd desktop
     * $ git clone <paste repository link>
-    * $ cd php-word-frequency
-    * $ composer install --> to download dependencies (Silex, Twig, and PHPUnit)
-    * $ cd web --> to access web folder
-    * $ php -S localhost:8000 --> to open local server
+    * $ cd Word-Frequency
+    * $ composer install
+      (to download dependencies: Silex, Twig, and PHPUnit)
+    * $ cd web
+      (to access web folder)
+    * $ php -S localhost:8000
+      (to open local server)
 ````
 * Open browser and type 'localhost:8000' to view app.
 * Enter in a word and string of words, and find out how many times your word appears in the string!
